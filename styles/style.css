@@ -8,7 +8,17 @@ body{
   background-color: #393639;
 }
 .projectsBar{
-  height: 1920px;
-  width: 500px;
+  height: 100vh;
+  width: 100%;
   background-image: : url('../img/background.png');
+  background-size: cover;
+  background-position: center;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
 }
