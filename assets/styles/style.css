@@ -10,7 +10,7 @@ body{
 .projectsBar{
   height: 500px;
   width: 100%;
-  background-image: url('/img/background.png');
+  background-image: url('/assets/imgs/background.png');
   background-size: 100% 50%;
   background-position: top;
 }
