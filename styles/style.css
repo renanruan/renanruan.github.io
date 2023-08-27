@@ -1,14 +1,14 @@
 *{
   padding: : 0;
   margin: 0;
-  font: 'Arial';
+  font: 'Ubuntu';
   box-sizing: border-box;
 }
 body{
   background-color: #393639;
 }
 .projectsBar{
-  height: 100vh;
-  width: 100%;
-  background-image: : url("../img/background.png");
+  height: 1920px;
+  width: 500px;
+  background-image: : url('../img/background.png');
 }
