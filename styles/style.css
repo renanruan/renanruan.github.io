@@ -10,7 +10,7 @@ body{
 .projectsBar{
   height: 100vh;
   width: 100%;
-  background-image: : url('../img/background.png');
+  background-image: : url('/img/background.png');
   background-size: cover;
   background-position: center;
 }
@@ -21,4 +21,43 @@ nav{
   padding-top: 45px;
   padding-left: 8%;
   padding-right: 8%;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+nav ul li a{
+  color:white;
+  text-decoration: :none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav ul li a:hover{
+  color: #f9004d;
+  transition: .2s;
+}
+.logo{
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.btn{
+  background-color: #f9004d;
+  color: : white;
+  text-decoration: none;;
+  border: 2px solid transparent;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: transform .2s;
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
 }
