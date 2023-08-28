@@ -1,0 +1,42 @@
+@font-face {
+    font-family: MountAround;
+    src: url('file:///C:/Users/Dell/Documents/GitHub/renanruan.github.io/assets/fonts/Montaround.otf');
+    /* src: url('/assets/fonts/Montaround.otf');*/
+}
+*{
+    padding: 0px;
+    margin: 0;
+    font-family: MountAround;
+    box-sizing: border-box;
+}
+body{
+    background-color: #393639;
+}
+.btn{
+    background-color: #f9004d;
+    color: : white;
+    text-decoration: none;;
+    border: 2px solid transparent;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: transform .2s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+h1{
+    color: #97CFD0;
+    margin: 0px 0px 0px;
+    font-size: 75px;
+}
+h3{
+    color: #9CD8E7;
+    font-size: 25px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+h4{
+
+    letter-spacing: 2px;
+    font-size: 20px;
+}

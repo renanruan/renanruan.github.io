@@ -1,0 +1,76 @@
+.projectsBar{
+    height: 500px;
+    width: 100%;
+    background-image: url('file:///C:/Users/Dell/Documents/GitHub/renanruan.github.io/assets/imgs/background.png');
+    /* background-image: url('/assets/imgs/background.png'); */
+    background-size: 100% 50%;
+    background-position: top;
+    background-repeat: repeat-x;
+    position: relative;
+}
+.introContent{
+    position: absolute;
+    width: 65%;
+    padding-left: 5%;
+    top: 52%;
+    bottom: 25%
+
+}
+.portraitContend{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 65%;
+    padding-right: 10%;
+    top: 10%;
+    bottom: 25%
+}
+.dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 275px;
+    height: 275px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+.image-cropper {
+    width: 255px;
+    height: 255px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+img.rounded {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    top: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: red;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: :none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .2s;
+}
