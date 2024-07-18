@@ -2,68 +2,42 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
+    <link href="assets/styles/color_reference.css" rel="stylesheet" />
     <link href="assets/styles/main_style.css" rel="stylesheet" />
-    <link href="assets/styles/top_panel.css" rel="stylesheet" />
+    <link href="assets/styles/home_style.css" rel="stylesheet" />
 </head>
 <body>
-    <div class = "projectsBar">
-        <div class="introContent">
-            <h1>Renan Ruan</h1>
-            <h3>I'am a Software Developer.   Welcome to my Portifolio!</h3>
+    <div class="main-container">
+        <div class="image-container">
+            <div class="moving-background"></div>
         </div>
-        <span class="portraitContend">
-            <span class="dot">
-                <div class="image-cropper">
-                    <img src="https://via.placeholder.com/150" class="rounded" />
+        <div class="text-container">
+            <div class="main-text">
+                <div>
+                    <h1>Welcome to my portfolio!</h1>
+                    <h2>Here, you'll find a showcase of all my projects developed for different purposes and applications.<br><br>Feel free to explore my work :D</h2>
                 </div>
-            </span>
-        </span>
-        <nav>
-            <ul>
-                <li><a href="#">Highlights</a></li>
-                <li><a href="#">Freelance</a></li>
-                <li><a href="#">Space & Aeronaltic</a></li>
-                <li><a href="#">Games</a></li>
-            </ul>
-        </nav>
-    </div>
-    <!----------- Projects Section ---------->
-    <div class="projects">
-
-
-        <div class="title">
-            <h2>My Projects</h2>
-        </div>
-        <div class="projectsBox">
-            <div class="card">
-                <i class="fas fa-bars"></i>
-                <h5>Web Development</h5>
-                <div class="cardText">
-                    <p> BLA BLA BLA BLA BLA BLA.</p>
-                    <p style="text-align: center;"><a class="button" href="#">Read More</a></p>
-                </div>
+                <div>IMAGE INTRO</div>
             </div>
-
-            <div class="card">
-                <i class="fas fa-bars"></i>
-                <h5>Software Development</h5>
-                <div class="cardText">
-                    <p> BLA BLA BLA BLA BLA BLA.</p>
-                    <p style="text-align: center;"><a class="button" href="#">Read More</a></p>
-                </div>
-            </div>
-
-            <div class="card">
-                <i class="fas fa-bars"></i>
-                <h5>App Development</h5>
-                <div class="cardText">
-                    <p> BLA BLA BLA BLA BLA BLA.</p>
-                    <p style="text-align: center;"><a class="button" href="#">Read More</a></p>
-                </div>
-            </div>
+            <div class="bottom-bar-transition"></div>
         </div>
     </div>
-
+    <nav class="bottom-bar">
+        <ul class="nav-list">
+            <li><a class="selected" href="#section1">HOME</a></li>
+            <li><a class="not-selected" href="#section1">PROJECTS</a></li>
+            <li><a class="not-selected" href="#section1">ABOUT ME</a></li>
+        </ul>
+    </div>
 </body>
 </html>
+
+<!--- 
+
+        <div class="nav-button-left"><a class="selected" href="#section1">HOME</a></div>
+        <div class="nav-button-center"><a class="not-selected" href="#section1">PROJECTS</a></div>
+        <div class="nav-button-right"><a class="not-selected" href="#section1">ABOUT ME</a></div>
+
+-->

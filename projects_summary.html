@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link href="assets/styles/color_reference.css" rel="stylesheet" />
+    <link href="assets/styles/main_style.css" rel="stylesheet" />
+    <link href="assets/styles/projects_style.css" rel="stylesheet" />
+    <script src="assets/scripts/projects_summary.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="top-bar">
+            <ul class="nav-list">
+                <li><a id="highlight" onclick="generateHighlightContent()" class="not-selected" href="#">HIGHLIGHTS</a></li>
+                <li><a id="traffic" onclick="generateFilterContent('traffic')" class="not-selected" href="#">TRAFFIC SURVEILLANCE</a></li>
+                <li><a id="aerospace" onclick="generateFilterContent('aerospace')" class="not-selected" href="#">AEROSPACE</a></li>
+                <li><a id="games" onclick="generateFilterContent('games')" class="not-selected" href="#">GAMES</a></li>
+                <li><a id="ai" onclick="generateFilterContent('ai')" class="not-selected" href="#">AI</a></li>
+                <li><a id="mobile" onclick="generateFilterContent('mobile')" class="not-selected" href="#">MOBILE</a></li>
+            </ul>
+            <div class="top-bar-transition"></div>
+        </div>
+        <div class="projects-container">
+            <div class="main-projects" id="sample-container">
+                <div class="project-sample">
+                    <div class="sample-image">
+                    </div>
+                    <div class="sample-description">
+                        <div class="sample-text">
+                            <h2>${item.title}</h2>
+                            <h3>${item.date}</h3>
+                            ${item.description}
+                        </div>
+                        <div class="sample-bar">
+                            <button>LER SOBRE</button>
+                            <span>TAG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filler"></div>
+            <div class="bottom-bar-transition"></div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <ul class="nav-list">
+            <li><a class="selected" href="#section1">HOME</a></li>
+            <li><a class="not-selected" href="#section1">PROJECTS</a></li>
+            <li><a class="not-selected" href="#section1">ABOUT ME</a></li>
+        </ul>
+    </div>
+    <script>
+        generateHighlightContent();
+    </script>
+</body>
+</html>
