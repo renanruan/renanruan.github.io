@@ -46,6 +46,14 @@ body, html {
             border-bottom: 1px solid var(--teal);
         }
     }
+
+    @media (max-width:960px){
+        .nav-list li{
+            a {
+                font-size: 14px;
+            }
+        }
+    }
 }
 .nav-list{
     display: flex;
@@ -55,6 +63,11 @@ body, html {
     list-style: none;
     padding: 0;
     margin: 0 120px;
+}
+@media (max-width:960px){
+    .nav-list{
+        margin: 0 60px;
+    }
 }
 .nav-list li{
     text-align: center;

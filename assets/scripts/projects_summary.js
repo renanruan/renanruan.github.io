@@ -114,7 +114,7 @@ const dataset = [
     {
         highlight: 1, 
         category: ["ai","aerospace"],
-        title:"Machine Learning as a Tool for Enchancing Air Navigation in Low Latitudes", 
+        title:"Machine Learning as a Tool for Enhancing Air Navigation in Low Latitudes", 
         date:"Jun 2024", 
         description:"<p></p>", 
         tag: ["Python", "Google Colab", "Keras", "PyThorch"]
@@ -130,7 +130,6 @@ function generateFilterContent(category){
 }
 
 function generateHighlightContent(){
-
     const filteredData = dataset.filter(item => item.highlight > 0);
     filteredData.sort((a,b) => Math.abs(a.highlight) - Math.abs(b.highlight));
     fillSampleContainer(filteredData);
@@ -139,15 +138,19 @@ function generateHighlightContent(){
 }
 
 function fillSampleContainer(elementsList){
-    const container = document.getElementById("sample-container");
+    const container = document.getElementById("project-container");
     container.innerHTML = '';
 
-    elementsList.forEach(item => {
-        var html = `
-                <div class="project-sample">
-                    <div class="sample-image">
+    var html = `
+            <div class="main-projects">
+    `;
 
-                    </div>
+    elementsList.forEach(item => {
+        html += `
+                <div class="project-sample">
+                <div class="sample-image">
+
+                </div>
                     <div class="sample-description">
                         <div class="sample-text">
                             <h2>${item.title}</h2>
@@ -155,7 +158,7 @@ function fillSampleContainer(elementsList){
                             ${item.description}
                         </div>
                         <div class="sample-bar">
-                            <button>LER SOBRE</button>
+                            <button onclick="showProject('${item.title}')">READ MORE</button>
         `;
         var max_tags = 3;
         item.tag.forEach(function(tagling){
@@ -167,13 +170,18 @@ function fillSampleContainer(elementsList){
         })
 
         html += `
+                        </div>
                     </div>
                 </div>
-            </div>
         `;
-
-        container.innerHTML += html;
     });
+
+    html += `                
+            </div>
+            <div class="filler"></div>
+            <div class="bottom-bar-transition"></div>
+    `;
+    container.innerHTML += html;
 }
 
 function updateLinks(selected_id){
@@ -198,4 +206,69 @@ function updateLinks(selected_id){
             }
         }
     });
+}
+
+function GoToFilteredContent(category){
+    redirectToProjects();
+
+    generateFilterContent(category);
+}
+
+function GoToHighlightContent(){
+    redirectToProjects();
+
+    generateHighlightContent();
+}
+
+function redirectToProjects()
+{
+    window.location.href = 'projects_summary.html';
+}
+
+function showProject(project_title){
+
+    console.log("mudor de pagina");
+
+    const project = dataset.find(element => element.title === project_title);
+    const container = document.getElementById("project-container");
+    container.innerHTML = '';
+
+    if(container){
+        console.log("achou");
+        var html = `
+        <div class="project-content">
+            <div class="project-text">
+                <h2>${project.title}</h2>
+                <h3>${project.date}</h3>
+                ${project.description}
+            </div>
+            <div class="project-tags">
+                <span>TAG</span>
+        `;
+
+        project.tag.forEach(function(tagling){
+            const tag_html = `<span>${tagling}</span>`;
+            html += tag_html;
+        });
+
+
+        html += `
+            </div>
+            <div class="project-images">
+                <img></img>
+                <button class="btn left">←</button>
+                <button class="btn right">→</button>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <div class="bottom-bar-transition"></div>
+        `;
+
+        container.innerHTML += html;
+    }
+    else{
+        console.log("nao achou");
+    }
+
+    
 }
