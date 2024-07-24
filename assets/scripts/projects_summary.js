@@ -141,6 +141,11 @@ function fillSampleContainer(elementsList){
     const container = document.getElementById("project-container");
     container.innerHTML = '';
 
+    var readButton = 'READ MORE';
+    if (window.innerWidth < 960) { 
+        readButton = 'MORE';
+    }
+
     var html = `
             <div class="main-projects">
     `;
@@ -158,7 +163,7 @@ function fillSampleContainer(elementsList){
                             ${item.description}
                         </div>
                         <div class="sample-bar">
-                            <button onclick="showProject('${item.title}')">READ MORE</button>
+                            <button onclick="showProject('${item.title}')">${readButton}</button>
         `;
         var max_tags = 3;
         item.tag.forEach(function(tagling){
