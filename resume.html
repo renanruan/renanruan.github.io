@@ -4,9 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
-    <link href="assets/styles/color_reference.css" rel="stylesheet" />
+    <link href="assets/styles/color_reference.css" rel="stylesheet"/>
     <link href="assets/styles/main_style.css" rel="stylesheet" />
-    <link href="assets/styles/home_style.css" rel="stylesheet" />
+    <link href="assets/styles/index_style.css" rel="stylesheet" />
+    <link href="assets/styles/resume_style.css" rel="stylesheet" />
+    <script src="assets/scripts/resume.js"></script>
 </head>
 <body>
     <div class="main-container">
@@ -14,23 +16,51 @@
             <div class="moving-background"></div>
         </div>
         <div class="text-container">
-            <div class="main-text">
-                <div class="text-content">
+            <div class="scroll-info">
+                <div class="info-content">
                     <h2>About me</h2>
+                    <div class="info-area">
+                        <p>Text about me</p>
+                        <p>Text about me</p>
+                    </div>
+                    
                 </div>
-                <div class="text-content">
-                    <h2>More</h2>
-                    <h3>E-mail</h3>
-                    <h4>renan.rrfs@gmail.com</h4>
-                    <h3>Resume</h3>
-                    <h4>Online</h4>
-                    <h4>Download</h4>
-                    <h3>Linkedin</h3>
-                    <h4>https://linkedin.com/in/renan-sarmento/</h4>
-                    <h3>Itch</h3>
-                    <h4>https://https://renanruan.itch.io/</h4>
-                    <h3>GitHub</h3>
-                    <h4>https://renanruan.github.io/</h4>
+                <div class="cards-content">
+                    <div class="info-card">
+                        <h3>E-mail</h3>
+                        <div class="icon" onclick="copyEmail()"></div>
+                        <div class="card-buttons">
+                            <h4>renan.rrfs@gmail.com</h4>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h3>Resume</h3>
+                        <div class="icon" onclick="goToExternalSite('pdf links')"></div>
+                        <div class="card-buttons">
+                            <button onclick="downloadResume()">DOWNLOAD</button>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h3>Linkedin</h3>
+                        <div class="icon" onclick="goToExternalSite('https://linkedin.com/in/renan-sarmento/')"></div>
+                        <div class="card-buttons">
+                            <button onclick="goToExternalSite('https://linkedin.com/in/renan-sarmento/')">VISIT</button>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h3>Itch</h3>
+                        <div class="icon" onclick="goToExternalSite('https://renanruan.itch.io/')"></div>
+                        <div class="card-buttons">
+                            <button onclick="goToExternalSite('https://renanruan.itch.io/')">VISIT</button>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h3>GitHub</h3>
+                        <div class="icon" onclick="goToExternalSite('https://renanruan.github.io/')"></div>
+                        <div class="card-buttons">
+                            <button onclick="goToExternalSite('https://renanruan.github.io/')">VISIT</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="bottom-bar-transition"></div>
