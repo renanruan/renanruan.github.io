@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 .moving-background{
-    background-image: url('../imgs/Profile_Picture/sky.png');
+    background-image: url('../imgs/Background/sky.png');
     background-repeat: repeat;
     position: absolute;
     top: 0;

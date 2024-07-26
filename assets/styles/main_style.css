@@ -92,6 +92,10 @@ body, html {
 ::-webkit-scrollbar-thumb:hover{
     background: rgba(51, 48, 51, 1);
 }
+.filler{
+    display: flex;
+    flex: 1;
+}
 
 
 

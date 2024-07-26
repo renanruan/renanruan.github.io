@@ -15,10 +15,12 @@
     }
 }
 .info-content{
-    width: 40%;
-    height: auto;
+    display: flex;
+    width: 30%;
     margin-top: 50px;
     margin-right: 15px;
+    text-align: center;
+    flex-flow: column;
 }
 @media (max-width:960px){
     .info-content{
@@ -27,16 +29,30 @@
     }
 }
 .info-area{
+    display: flex;
     position: relative;
-    width: 100%;
-    height: auto;
+    flex: 1;
     padding: 0;
     overflow: hidden;
+    text-align: left;
+    margin-bottom: 50px;
+    flex-flow: column;
 
     p{
         color: var(--off_white);
-        margin: 15px;
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        margin: 30px;
     }
+
+    @media (max-width:960px){
+        p{
+            font-size: 14px;
+            margin: 15px;
+        }
+    }
+
 }
 .info-area::before{
     content: '';
@@ -51,14 +67,24 @@
     filter: blur(2px);
     z-index: -1;
 }
+.profile-picture{
+    display: flex;
+    max-width: 300px;
+    flex: 1;
+    aspect-ratio: 1;
+    justify-self: center;
+    border-radius: 50%;
+    margin: 30px auto;
+    border: 4px solid var(--light_yellow);
+}
 .cards-content{
     display: grid;
-    padding-top: 108px;
+    padding-top: 59px;
     padding-bottom: 15px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
-    width: calc( 60% - 15px);
+    width: calc( 70% - 15px);
     height: max-content;
     box-sizing: border-box;
 }
@@ -94,14 +120,15 @@
     .icon{
         width: 128px;
         height: 128px;
-        background-color: aliceblue;
         box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
         cursor: pointer;
+        border-radius: 60px;
     }
     @media (max-width:960px){
         .icon{
             width: 100px;
             height: 100px;
+            border-radius: 45px;
         }
     }
 
