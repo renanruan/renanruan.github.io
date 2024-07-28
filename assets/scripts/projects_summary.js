@@ -1,6 +1,6 @@
 const dataset = window.dataset;
 
-var current_slide = 0;
+var current_slide = 1;
 var current_project;
 
 function generateFilterContent(category){
@@ -9,6 +9,8 @@ function generateFilterContent(category){
     fillSampleContainer(filteredData);
 
     updateLinks(category);
+
+    history.pushState({ content: category }, 'Show Projects', `#${category}`);
 }
 
 function generateHighlightContent(){
@@ -17,6 +19,8 @@ function generateHighlightContent(){
     fillSampleContainer(filteredData);
 
     updateLinks('highlight');
+
+    history.pushState({ content: 'highlight' }, 'Show Projects', '#highlight');
 }
 
 function fillSampleContainer(elementsList){
@@ -95,76 +99,59 @@ function updateLinks(selected_id){
     });
 }
 
-function GoToFilteredContent(category){
-    redirectToProjects();
-
-    generateFilterContent(category);
-}
-
-function GoToHighlightContent(){
-    redirectToProjects();
-
-    generateHighlightContent();
-}
-
-function redirectToProjects()
-{
-    window.location.href = 'projects_summary.html';
-}
-
 function showProject(project_id){
 
-    current_slide = 0
+    current_slide = 1
 
     current_project = dataset.find(element => element.id == project_id);
     const container = document.getElementById("project-container");
     container.innerHTML = '';
 
-    if(container){
-        var html = `
-        <div class="project-content">
-            <div class="project-text">
-                <h2>${current_project.title}</h2>
-                <h3>${current_project.date}</h3>
-                ${current_project.description}
-            </div>
-            <div class="project-tags">
-        `;
-
-        current_project.tag.forEach(function(tagling){
-            const tag_html = `<span>${tagling}</span>`;
-            html += tag_html;
-        });
-
-
-        html += `
-            </div>
-            <div id="image_frame" class="project-images">
-                <img src="${current_project.images[current_slide]}" onclick="showImageSrc('${current_project.images[current_slide]}')"></img>
-            </div>
-            <div class="slide-buttons">
-                <button class="btn left" onclick="slideImage(-1)">PREV</button>
-                <button class="btn right" onclick="slideImage(1)">NEXT</button>
-            </div>
+    var html = `
+    <div class="project-content">
+        <div class="project-text">
+            <h2>${current_project.title}</h2>
+            <h3>${current_project.date}</h3>
+            ${current_project.description}
         </div>
-        <div class="filler"></div>
-        <div class="bottom-bar-transition"></div>
-        `;
+        <div class="project-tags">
+    `;
 
-        container.innerHTML += html;
-    }
-    else{
-        console.log("nao achou");
-    }
+    current_project.tag.forEach(function(tagling){
+        const tag_html = `<span>${tagling}</span>`;
+        html += tag_html;
+    });
 
-    
+
+    html += `
+        </div>
+        <div id="image_frame" class="project-images">
+            <img src="${current_project.images[current_slide]}" onclick="showImageSrc('${current_project.images[current_slide]}')"></img>
+        </div>
+        <div class="slide-buttons">
+            <button class="btn left" onclick="slideImage(-1)">PREV</button>
+            <button class="btn right" onclick="slideImage(1)">NEXT</button>
+        </div>
+    </div>
+    <div class="filler"></div>
+    <div class="bottom-bar-transition"></div>
+    `;
+
+    container.innerHTML += html;
+
+    history.pushState({ content: `project${project_id}` }, 'Show Project', `#project${project_id}`);
 }
 
 function slideImage(offset)
 {
-    current_slide = (offset + current_slide) % current_project.images.length;
+    current_slide = offset + current_slide;
 
-    if(current_slide < 0){
+    if(current_slide == current_project.images.length)
+    {
+        current_slide = 1;
+    }
+
+    if(current_slide == 0){
         current_slide = current_project.images.length - 1;
     }
 
@@ -179,3 +166,32 @@ function showImageSrc(img)
 {
     window.open(img,'_blank');
 }
+
+window.addEventListener('popstate', function(event) {
+    if (event.state && event.state.content === 'highlight') {
+        generateHighlightContent();
+        console.log('POPSTATE highlight');
+    } else if(event.state && event.state.content.startsWith('project')) {
+        showProject(event.state.content.slice('project'.length));
+        console.log('POPSTATE projectid' + event.state.content);
+    } else if(event.state){
+        generateFilterContent(event.state.content);
+        console.log('POPSTATE category' + event.state.content);
+    }
+});
+
+window.addEventListener('load', function() {
+    if (window.location.hash === '#highlight') {
+        generateHighlightContent();
+        console.log('LOAD highlight');
+    } else if(window.location.hash.startsWith('#project')) {
+        showProject(window.location.hash.slice('$project'.length));
+        console.log('LOAD proejctid');
+    } else if(window.location.hash.startsWith('#')) {
+        generateFilterContent(window.location.hash.slice(1));
+        console.log('LOAD category' + window.location.hash);
+    } else {
+        generateHighlightContent();
+        console.log('LOAD default');
+    }
+});

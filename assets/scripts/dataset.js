@@ -25,7 +25,7 @@ window.dataset = [
         category: ["games", "mobile"],
         title:"Listen & Catch Up", 
         date:"Aug 2018", 
-        description:"<p>In 2018, I collaborated with the Center for Game and Internet Studies (CEGI), an extension group of UNIFESP, to develop an educational game aimed at teaching English to children. As a programmer, I worked closely with a multidisciplinary team of students to bring this project to life. The game is open-source and available for free on <a href=''>GitHub</a>.</p><p>The development process utilized several key technologies. C# was employed for its powerful and efficient programming capabilities, while Unity3D provided a versatile platform for creating engaging game environments. Visual Studio served as our integrated development environment, streamlining the coding, debugging and testing processes. This combination of technologies ensured the creation of an effective and accessible educational tool.</p>", 
+        description:"<p>In 2018, I collaborated with the Center for Game and Internet Studies (CEGI), an extension group of UNIFESP, to develop an educational game aimed at teaching English to children. As a programmer, I worked closely with a multidisciplinary team of students to bring this project to life. The game is open-source and available for free on <a href='https://github.com/renanruan/Listen-Catch-Up'>GitHub</a>.</p><p>The development process utilized several key technologies. C# was employed for its powerful and efficient programming capabilities, while Unity3D provided a versatile platform for creating engaging game environments. Visual Studio served as our integrated development environment, streamlining the coding, debugging and testing processes. This combination of technologies ensured the creation of an effective and accessible educational tool.</p>", 
         tag: ["C#", "Unity3D", "Visual Studio"],
         images: ["assets/imgs/Project_Listen&CatchUp/Pic1.png","assets/imgs/Project_Listen&CatchUp/Pic2.png","assets/imgs/Project_Listen&CatchUp/Pic3.png","assets/imgs/Project_Listen&CatchUp/Pic4.png"]
     },
@@ -57,7 +57,7 @@ window.dataset = [
         date:"Sep 2016", 
         description:"<p>This is a comprehensive project management system designed for risk assessment and automatic report generation. The Windows desktop application allows users to create projects and input extensive data regarding project safety and potential failures. The software performs calculations to determine risk levels at each stage of the project and enables users to generate PDF reports automatically.</p><p>Developed using C# for programming and Visual Studio as the integrated development environment, the application also includes functionality for generating PDF reports. This streamlines the documentation process and enhances project management efficiency, showcasing my ability to develop robust desktop applications that address critical industry needs.</p>", 
         tag: ["C#", "Windows Forms","Visual Studio"],
-        images: ["assets/imgs/Project_RiskReport/Pic1.png","assets/imgs/Project_RiskReport/Pic2.png","assets/imgs/Project_RiskReport/Pic3.png","assets/imgs/Project_RiskReport/Pic4.png","assets/imgs/Project_RiskReport/Pic5.png","assets/imgs/Project_RiskReport/Pic6.png"]
+        images: ["assets/imgs/Project_RiskReport/Pic1.png","assets/imgs/Project_RiskReport/Pic2.png","assets/imgs/Project_RiskReport/Pic3.png","assets/imgs/Project_RiskReport/Pic4.png","assets/imgs/Project_RiskReport/Pic5.png","assets/imgs/Project_RiskReport/Pic6.png","assets/imgs/Project_RiskReport/Pic7.png"]
     },
     {
         id: 6,
@@ -75,7 +75,7 @@ window.dataset = [
         category: ["games"],
         title:"Don\'t Lose Your Head", 
         date:"Jan 2021", 
-        description:"<p>Don\'t Lose Your Head is a dynamic Bullet Hell game developed in 2021 for the international Global Game Jam. The theme for that year was Lost & Found and I collaborated with a talented 2D artist and a sound designer to create this game in just 4 days using Unity3D.</p><p>The game is highly energetic and can be played <a href=''>here</a> for free on any desktop via a web browser. Check out the game trailer on <a href=''>YouTube</a>!</p><p>During the development we used Unity3D for its versatile platform, C# for robust programming, Visual Studio for a streamlined workflow and FMOD for immersive sound design. This combination ensured a polished and engaging gaming experience.</p>", 
+        description:"<p>Don\'t Lose Your Head is a dynamic Bullet Hell game developed in 2021 for the international Global Game Jam. The theme for that year was Lost & Found and I collaborated with a talented 2D artist and a sound designer to create this game in just 4 days using Unity3D.</p><p>The game is highly energetic and can be played <a href='https://renanruan.itch.io/dont-lose-your-head'>here</a> for free on any desktop via a web browser. Check out the game trailer on <a href='https://youtu.be/ZSi_zFrzMJM'>YouTube</a>!</p><p>During the development we used Unity3D for its versatile platform, C# for robust programming, Visual Studio for a streamlined workflow and FMOD for immersive sound design. This combination ensured a polished and engaging gaming experience.</p>", 
         tag: ["C#", "Unity3D", "Visual Studio", "FMOD"],
         images: ["assets/imgs/Project_DontLoseYourHead/Pic1.png","assets/imgs/Project_DontLoseYourHead/Pic2.png","assets/imgs/Project_DontLoseYourHead/Pic3.png","assets/imgs/Project_DontLoseYourHead/Pic4.png"]
     },
@@ -85,7 +85,7 @@ window.dataset = [
         category: ["games"],
         title:"MKS Unity Challenge", 
         date:"Feb 2023", 
-        description:"<p>In 2023, MKS hosted a challenge for Unity3D developers to showcase their skills, providing a set of assets and project guidelines. I created 'MKS Unity Challenge' a fun and engaging game where players control a boat and must defeat pirates within a limited timeframe. The game was developed entirely in Unity3D and is available to play for free <a href=''>here</a> on any desktop browser.</p><p>The project utilized Unity3D for its powerful game development capabilities, C# for programming and Visual Studio as the integrated development environment. This combination of technologies allowed me to develop a dynamic and enjoyable gaming experience.</p>", 
+        description:"<p>In 2023, MKS hosted a challenge for Unity3D developers to showcase their skills, providing a set of assets and project guidelines. I created 'MKS Unity Challenge' a fun and engaging game where players control a boat and must defeat pirates within a limited timeframe. The game was developed entirely in Unity3D and is available to play for free <a href='https://renanruan.itch.io/mks-challenge'>here</a> on any desktop browser.</p><p>The project utilized Unity3D for its powerful game development capabilities, C# for programming and Visual Studio as the integrated development environment. This combination of technologies allowed me to develop a dynamic and enjoyable gaming experience.</p>", 
         tag: ["C#", "Unity3D", "Visual Studio"],
         images: ["assets/imgs/Project_MKSChallenge/Pic1.png","assets/imgs/Project_MKSChallenge/Pic2.png","assets/imgs/Project_MKSChallenge/Pic3.png","assets/imgs/Project_MKSChallenge/Pic4.png","assets/imgs/Project_MKSChallenge/Pic5.png","assets/imgs/Project_MKSChallenge/Pic6.png"]
     },
@@ -95,9 +95,9 @@ window.dataset = [
         category: ["games"],
         title:"Little Goats Quiz", 
         date:"May 2019", 
-        description: "<p>In 2019, I collaborated with the Center for Game and Internet Studies (CEGI), an extension group of UNIFESP, to develop an educational game for elementary schools in São José dos Campos.</p><p>The game's objective is to enhance children's reading comprehension by combining a children's story with an interactive quiz. Additionally, it features videos in Brazilian Sign Language (Libras) to ensure greater accessibility.</p><p>As a programmer on this project, I worked closely with a multidisciplinary team of students, utilizing my skills in C#, Unity3D and Visual Studio to bring the game to life. The game is open-source and available for free on <a href=''>GitHub</a>. This experience not only allowed me to apply my technical expertise but also to contribute to a meaningful educational initiative.</p>", 
+        description: "<p>In 2019, I collaborated with the Center for Game and Internet Studies (CEGI), an extension group of UNIFESP, to develop an educational game for elementary schools in São José dos Campos.</p><p>The game's objective is to enhance children's reading comprehension by combining a children's story with an interactive quiz. Additionally, it features videos in Brazilian Sign Language (Libras) to ensure greater accessibility.</p><p>As a programmer on this project, I worked closely with a multidisciplinary team of students, utilizing my skills in C#, Unity3D and Visual Studio to bring the game to life. The game is open-source and available for free on <a href='https://github.com/renanruan/QuizCabritinhos'>GitHub</a>. This experience not only allowed me to apply my technical expertise but also to contribute to a meaningful educational initiative.</p>", 
         tag: ["C#", "Unity3D", "Visual Studio"],
-        images: ["assets/imgs/Project_GoatQuiz/Pic1.png","assets/imgs/Project_GoatQuiz/Pic2.png","assets/imgs/Project_GoatQuiz/Pic3.png","assets/imgs/Project_GoatQuiz/Pic4.png"]
+        images: ["assets/imgs/Project_GoatQuiz/Pic1.png","assets/imgs/Project_GoatQuiz/Pic2.png","assets/imgs/Project_GoatQuiz/Pic3.png","assets/imgs/Project_GoatQuiz/Pic4.png","assets/imgs/Project_GoatQuiz/Pic5.png"]
     },
     {
         id: 10,
@@ -105,7 +105,7 @@ window.dataset = [
         category: ["games"],
         title:"Scribble Scrabble", 
         date:"Feb 2021", 
-        description:"<p>Created for the international Scribble Jam competition, Scribble Scrabble is a fun and visually appealing Tower Defense game. Developed in collaboration with a multidisciplinary team over five days, the game embraces the  'Scribbles ' theme and offers an engaging gameplay experience. It is available for free <a href=''>here</a>, on any desktop browser.</p><p>The project utilized Unity3D for game development, C# for programming, and Visual Studio as the integrated development environment. Check out the game trailer on <a href=''>YouTube</a>!</p>", 
+        description:"<p>Created for the international Scribble Jam competition, Scribble Scrabble is a fun and visually appealing Tower Defense game. Developed in collaboration with a multidisciplinary team over five days, the game embraces the  'Scribbles ' theme and offers an engaging gameplay experience. It is available for free <a href='https://renanruan.itch.io/scribble-scrabble'>here</a>, on any desktop browser.</p><p>The project utilized Unity3D for game development, C# for programming, and Visual Studio as the integrated development environment. Check out the game trailer on <a href='https://youtu.be/A-LnF7IeSao'>YouTube</a>!</p>", 
         tag: ["C#", "Unity3D", "Visual Studio"],
         images: ["assets/imgs/Project_ScribbleScrabble/Pic1.gif","assets/imgs/Project_ScribbleScrabble/Pic2.png","assets/imgs/Project_ScribbleScrabble/Pic3.png","assets/imgs/Project_ScribbleScrabble/Pic4.png"]
     },
@@ -115,7 +115,7 @@ window.dataset = [
         category: ["games"],
         title:"Time Zooka", 
         date:"Jul 2021", 
-        description:"<p>Created for the international competition called A Jam about Time, Time Zooka embraces the 'Time' theme with a unique time manipulation mechanic. Developed in collaboration with a multidisciplinary team over two weeks, this Bullet Hell style game is both dynamic and charming. Available for free <a href=''>here</a>, on any desktop browser, Time Zooka offers an engaging and visually appealing gameplay experience. Check out the game trailer on <a href=''>YouTube</a>!</p><p>The project utilized Unity3D for game development, C# for programming and Visual Studio as the integrated development environment.</p>", 
+        description:"<p>Created for the international competition called A Jam about Time, Time Zooka embraces the 'Time' theme with a unique time manipulation mechanic. Developed in collaboration with a multidisciplinary team over two weeks, this Bullet Hell style game is both dynamic and charming. Available for free <a href='https://renanruan.itch.io/timezooka'>here</a>, on any desktop browser, Time Zooka offers an engaging and visually appealing gameplay experience. Check out the game trailer on <a href='https://youtu.be/Y3BIU35e4IA'>YouTube</a>!</p><p>The project utilized Unity3D for game development, C# for programming and Visual Studio as the integrated development environment.</p>", 
         tag: ["C#", "Unity3D", "Visual Studio"],
         images: ["assets/imgs/Project_TimeZooka/Pic1.png","assets/imgs/Project_TimeZooka/Pic2.jpg","assets/imgs/Project_TimeZooka/Pic3.jpg","assets/imgs/Project_TimeZooka/Pic4.jpg","assets/imgs/Project_TimeZooka/Pic5.jpg"]
     },
@@ -125,9 +125,9 @@ window.dataset = [
         category: ["traffic"],
         title:"Internal Traffic Surveillance System", 
         date:"Aug 2023", 
-        description:"<p></p>", 
+        description:"<p>This project involves a Windows desktop application designed for everyday use in residential complexes to monitor vehicle traffic. As my first project focused on extensive and operational daily use, it was developed with robust features to ensure seamless functionality. Key features include connecting to Pulmatronix cameras with on-screen display, integrating with speed control radars, and generating comprehensive traffic log reports.</p><p> The application also creates detailed reports of traffic violations, including vehicle images when speed limits are exceeded. Developed in C# and Visual Studio, the application utilizes serial and TCP/IP communication, along with a custom camera plugin to facilitate smooth interaction with the hardware.</p><p> This project was crucial in enhancing my skills for integrating software with third-party devices, providing a practical understanding of real-world applications and their operational challenges. Technologies used: C#, Visual Studio, WForms, Serial Communication, TCP/IP.</p>", 
         tag: ["C#", "TCP/IP", "Pulmatronix Camera", "Windows Forms", "Visual Studio", "Serial COM"],
-        images: [""]
+        images: ["assets/imgs/Project_Surveillance/Pic1.png","assets/imgs/Project_Surveillance/Pic2.png","assets/imgs/Project_Surveillance/Pic3.png","assets/imgs/Project_Surveillance/Pic4.png"]
     },
     {
         id: 13,
@@ -135,9 +135,9 @@ window.dataset = [
         category: ["traffic"],
         title:"Internal Traffic Surveillance System with Speed Control", 
         date:"Jun 2024", 
-        description:"<p></p>", 
+        description:"<p>Building upon the foundation of my other project <a href=''>Internal Traffic Surveillance System</a>, this evolved Windows desktop application enhances and extends its functionalities for even greater utility in residential complexes. This advanced version not only monitors vehicle traffic but also allows direct control and configuration of various radar aspects. It includes the capability to communicate with the radar for message exchange and testing, adding a new layer of interactivity and functionality.</p><p>The application connects to Pulmatronix cameras, displaying their images on-screen, and integrates with speed control radars to generate detailed traffic log reports and reports of traffic violations with vehicle images.</p><p>Additionally, this project leverages REST API for seamless communication with the cameras, ensuring efficient and reliable data exchange.</p><p>Developed in C# and Visual Studio, it utilizes serial and TCP/IP communication, along with a custom camera plugin. This was also pivotal in advancing my skills in software and hardware integration, particularly in real-world applications where reliability and operational efficiency are paramount.</p>", 
         tag: ["C#", "REST API", "Pulmatronix Camera", "TCP/IP","Windows Forms", "Visual Studio", "Serial COM"],
-        images: [""]
+        images: ["assets/imgs/Project_SurveillanceSpeed/Pic1.png","assets/imgs/Project_SurveillanceSpeed/Pic2.png","assets/imgs/Project_SurveillanceSpeed/Pic3.png","assets/imgs/Project_SurveillanceSpeed/Pic4.png","assets/imgs/Project_SurveillanceSpeed/Pic5.png","assets/imgs/Project_SurveillanceSpeed/Pic6.png","assets/imgs/Project_SurveillanceSpeed/Pic7.png"]
     },
     {
         id: 14,
@@ -145,9 +145,9 @@ window.dataset = [
         category: ["ai","aerospace"],
         title:"Machine Learning as a Tool for Enhancing Air Navigation in Low Latitudes", 
         date:"Jun 2024", 
-        description:"<p></p>", 
-        tag: ["Python", "Google Colab", "Keras", "PyThorch"],
-        images: [""]
+        description:"<p>This project explores the use of machine learning to classify significant alterations in the spatial gradient, a phenomenon impacting satellite communication, by analyzing ionosphere data and satellite positions. The study focuses on ionospheric events, particularly Equatorial Plasma Bubbles (EPB), and evaluates attributes such as Scintillation, Equatorial Plasma Bubbles, and Satellite Relative Position to determine their effect on the Spatial Gradient. Key parameters, including HANTS values, are used to indicate the occurrence of these phenomena.</p><p>I utilized several advanced technologies for data analysis and modeling. Support Vector Machine (SVM) with a Sliding Window method was employed for classification, leveraging pattern recognition with a temporal dimension. Linear Regression with a Sliding Window method was used for regression, estimating values based on a set of training examples. Recurrent Neural Networks (RNN), ideal for sequential and temporal data, were applied for deep learning, capturing temporal dependencies through hidden states.</p><p>The models were developed on the Google Colab platform using Python, which offers powerful computational resources, including GPUs and TPUs, and easy integration with Google Drive for data storage. Python's extensive libraries and frameworks, such as TensorFlow, Keras, Scikit-learn, and Pandas, provided essential tools for data manipulation, modeling, and algorithm evaluation.</p><p>The developed models exhibit a promising ability to identify and predict significant ionospheric changes, potentially enhancing the safety and efficiency of air navigation and satellite communication. The practical application of these findings can directly benefit GNSS-based navigation systems by providing more accurate and adaptive tools for early detection of adverse ionospheric conditions, thereby increasing the reliability of global positioning systems and contributing to better airspace management and flight safety.</p>", 
+        tag: ["Python", "Google Colab", "Keras", "PyThorch", "Scikit-learn", "SVM", "Linear Regression", "RNN"],
+        images: ["assets/imgs/Project_AILowLatitudes/Pic1.png","assets/imgs/Project_AILowLatitudes/Pic2.png","assets/imgs/Project_AILowLatitudes/Pic3.png","assets/imgs/Project_AILowLatitudes/Pic4.png","assets/imgs/Project_AILowLatitudes/Pic5.png","assets/imgs/Project_AILowLatitudes/Pic6.png"]
     },
     {
         id: 15,
@@ -155,7 +155,7 @@ window.dataset = [
         category: ["mobile","web"],
         title:"Portifolio Web Site", 
         date:"Jul 2024", 
-        description:"<p></p>", 
+        description:"<p>This very website is a testament to my skills and dedication, built entirely from scratch using HTML, CSS, and JavaScript. Designed as a personal portfolio, it serves as a presentation page to showcase my most interesting projects, providing a space where I can discuss each project in detail, share images, and highlight my technical skills.</p><p>The site also features a section <a href='https://renanruan.github.io/resume.html'>about me</a>, where visitors can find my resume, learn more about my work, and access my contact information. This project reflects my commitment to web development and my ability to create engaging and informative digital experiences.</p>", 
         tag: ["HTML", "CSS", "JavaScript"],
         images: [""]
     }
