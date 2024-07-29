@@ -36,36 +36,76 @@ function fillSampleContainer(elementsList){
             <div class="main-projects">
     `;
 
-    elementsList.forEach(item => {
-        html += `
-                <div class="project-sample">
-                <div class="sample-image">
-                    <img src="${item.images[0]}"></img>
-                </div>
-                    <div class="sample-description">
-                        <div class="sample-text">
-                            <h2>${item.title}</h2>
-                            <h3>${item.date}</h3>
-                            ${item.description}
-                        </div>
-                        <div class="sample-bar">
-                            <button onclick="showProject('${item.id}')">${readButton}</button>
-        `;
-        var max_tags = 3;
-        item.tag.forEach(function(tagling){
-            const tag_html = `<span>${tagling}</span>`;
-            if(max_tags > 0){
-                html += tag_html;
-                max_tags -= 1;
-            }
-        })
+    if (window.innerWidth < 960) 
+    { 
+        elementsList.forEach(item => {
+            html += `
+                    <div class="mobile-sample">
+                        <h2>${item.title}</h2>
+                        <div class="project-sample">
+                            <div class="sample-image">
+                                <img src="${item.images[0]}"></img>
+                            </div>
+                            <div class="sample-description">
+                                <div class="sample-text">
+                                    <h3>${item.date}</h3>
+                                    ${item.description}
+                                </div>
+                                <div class="sample-bar">
+                                    <button onclick="showProject('${item.id}')">${readButton}</button>
+            `;
+            
+            var max_tags = 2;
+            item.tag.forEach(function(tagling){
+                const tag_html = `<span>${tagling}</span>`;
+                if(max_tags > 0){
+                    html += tag_html;
+                    max_tags -= 1;
+                }
+            })
 
-        html += `
+            html += `           </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-        `;
-    });
+                    `;
+            
+        });
+    }
+    else
+    {
+        elementsList.forEach(item => {
+            html += `
+                    <div class="project-sample">
+                        <div class="sample-image">
+                            <img src="${item.images[0]}"></img>
+                        </div>
+                        <div class="sample-description">
+                            <div class="sample-text">
+                                <h2>${item.title}</h2>
+                                <h3>${item.date}</h3>
+                                ${item.description}
+                            </div>
+                            <div class="sample-bar">
+                                <button onclick="showProject('${item.id}')">${readButton}</button>
+            `;
+            
+            var max_tags = 3;
+            item.tag.forEach(function(tagling){
+                const tag_html = `<span>${tagling}</span>`;
+                if(max_tags > 0){
+                    html += tag_html;
+                    max_tags -= 1;
+                }
+            })
+
+            html += `
+                            </div>
+                        </div>
+                    </div>
+                    `;
+        });
+    }
 
     html += `                
             </div>
@@ -182,15 +222,19 @@ window.addEventListener('popstate', function(event) {
 
 window.addEventListener('load', function() {
     if (window.location.hash === '#highlight') {
+        history.replaceState({ content: 'highlight' }, 'Show Projects', '#highlight');
         generateHighlightContent();
         console.log('LOAD highlight');
     } else if(window.location.hash.startsWith('#project')) {
-        showProject(window.location.hash.slice('$project'.length));
+        history.replaceState({ content: window.location.hash.slice(1) }, 'Show Project', window.location.hash);
+        showProject(window.location.hash.slice('#project'.length));
         console.log('LOAD proejctid');
     } else if(window.location.hash.startsWith('#')) {
+        history.replaceState({ content: window.location.hash.slice(1) }, 'Show Projects', window.location.hash);
         generateFilterContent(window.location.hash.slice(1));
         console.log('LOAD category' + window.location.hash);
     } else {
+        history.replaceState({ content: 'highlight' }, 'Show Projects', '#highlight');
         generateHighlightContent();
         console.log('LOAD default');
     }
