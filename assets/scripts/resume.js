@@ -16,7 +16,7 @@ function goToExternalSite(site)
 function downloadResume()
 {
     const link = document.createElement('a');
-    link.href = 'assets/docs/Renan-Resume.pdf';
+    link.href = 'https://drive.google.com/file/d/1_rOaBG2fCdobTu3aWbSBksgjiJj9K_BS/view?usp=sharing';
     link.download = 'Renan_Resume.pdf';
     document.body.appendChild(link);
     link.click();

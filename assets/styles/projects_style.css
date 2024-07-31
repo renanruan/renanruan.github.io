@@ -88,9 +88,9 @@
 }
 @media (max-width:960px){
     .main-projects{ 
-        padding-left: 60px;
-        padding-right: 43px;
-        width: calc(100% - 120px);
+        padding-left: 30px;
+        padding-right: 13px;
+        width: calc(100% - 60px);
     }
 }
 .mobile-sample{

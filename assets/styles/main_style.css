@@ -66,7 +66,7 @@ body, html {
 }
 @media (max-width:960px){
     .nav-list{
-        margin: 0 60px;
+        margin: 0 30px;
     }
 }
 .nav-list li{

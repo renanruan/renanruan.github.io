@@ -52,8 +52,8 @@
 }
 @media (max-width:960px){
     .main-text{
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
         flex-direction: column;
 
         .text-content{
@@ -61,7 +61,7 @@
             height: 50%;
             align-content:end;
             margin-right: 0;
-            margin-bottom: 10%;
+            padding-bottom: 30px;
         }
     
         .image-content{
