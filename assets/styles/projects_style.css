@@ -326,18 +326,18 @@
 
     span{
         width: max-content;
-        height: 30px;
-        line-height: 30px;
+        height: 20px;
+        line-height: 20px;
         font-family: 'Roboto Flex', sans-serif;
         font-size: 12px;
-        color: var(--off_white);
-        padding: 0 15px;
+        color: var(--mutted_blue);
+        padding: 0 10px;
         background-color: var(--dark_blue);
-        border-radius: 15px;
-        border: 2px solid var(--light_yellow);
+        border-radius: 10px;
+        border: 2px solid var(--mutted_blue);
         box-sizing: border-box;
         display: inline-block;
-        margin-right: 15px;
+        margin-right: 10px;
     }
 }
 .project-images{
