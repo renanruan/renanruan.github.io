@@ -27,10 +27,13 @@ function fillSampleContainer(elementsList){
     const container = document.getElementById("project-container");
     container.innerHTML = '';
 
-    var readButton = 'READ MORE';
+    var readButton = 'READ MORE&nbsp;&nbsp;►';
+    /*
     if (window.innerWidth < 960) { 
-        readButton = 'MORE';
+        readButton = 'MORE&nbsp;&nbsp;►';
     }
+    */
+    
 
     var html = `
             <div class="main-projects">
@@ -52,7 +55,7 @@ function fillSampleContainer(elementsList){
                                     ${item.description}
                                 </div>
                                 <div class="sample-bar">
-                                    <button onclick="showProject('${item.id}')">${readButton}</button>
+                                    <div>
             `;
             
             var max_tags = 2;
@@ -64,7 +67,9 @@ function fillSampleContainer(elementsList){
                 }
             })
 
-            html += `           </div>
+            html += `               </div>
+                                    <button onclick="showProject('${item.id}')">${readButton}</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -87,10 +92,10 @@ function fillSampleContainer(elementsList){
                                 ${item.description}
                             </div>
                             <div class="sample-bar">
-                                <button onclick="showProject('${item.id}')">${readButton}</button>
+                                <div>
             `;
             
-            var max_tags = 3;
+            var max_tags = 4;
             item.tag.forEach(function(tagling){
                 const tag_html = `<span>${tagling}</span>`;
                 if(max_tags > 0){
@@ -99,7 +104,8 @@ function fillSampleContainer(elementsList){
                 }
             })
 
-            html += `
+            html += `           </div>
+                                <button onclick="showProject('${item.id}')">${readButton}</button>
                             </div>
                         </div>
                     </div>

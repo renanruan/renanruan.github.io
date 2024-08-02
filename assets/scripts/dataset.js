@@ -157,6 +157,6 @@ window.dataset = [
         date:"Jul 2024", 
         description:"<p>This very website is a testament to my skills and dedication, built entirely from scratch using HTML, CSS, and JavaScript. Designed as a personal portfolio, it serves as a presentation page to showcase my most interesting projects, providing a space where I can discuss each project in detail, share images, and highlight my technical skills.</p><p>The site also features a section <a href='https://renanruan.github.io/resume.html'>about me</a>, where visitors can find my resume, learn more about my work, and access my contact information. This project reflects my commitment to web development and my ability to create engaging and informative digital experiences.</p>", 
         tag: ["HTML", "CSS", "JavaScript"],
-        images: [""]
+        images: ["assets/imgs/Project_Portifolio/Pic1.png", "assets/imgs/Project_Portifolio/Pic2.png", "assets/imgs/Project_Portifolio/Pic3.png", "assets/imgs/Project_Portifolio/Pic4.png"]
     }
 ];
